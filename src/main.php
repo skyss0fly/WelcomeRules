@@ -1,6 +1,6 @@
 <?php
 
-namespace skyss0fly\WelcomerULES;
+namespace skyss0fly\WelcomeRules;
 
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
@@ -28,8 +28,7 @@ class Main extends PluginBase implements Listener {
 if ($broadcasttoserver === true) {
         $this->getServer()->broadcastMessage($message);
 }
-else ($broadcasttoserver === false) {
-    $player->sendMessage($message);
-}
+else {
+     $player->sendMessage($message);
 }
 }
