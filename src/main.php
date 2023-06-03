@@ -16,7 +16,7 @@ class Main extends PluginBase implements Listener {
 
     public function onPlayerJoin(PlayerJoinEvent $event) {
         $player = $event->getPlayer();
-        $servername = $this->getConfig()->get("ServerName");
+        $servername = $this->getConfig()->get("Namw");
         $prefix = $this->getConfig()->get("Prefix");
         $message = $this->getConfig()->get("Message")
         $broadcasttoserver = $this->getConfig()->get("BroadcastToServer");
