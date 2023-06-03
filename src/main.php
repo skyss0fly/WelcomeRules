@@ -32,3 +32,4 @@ else ($broadcasttoserver === false) {
     $player->sendMessage($message);
 }
 }
+}
