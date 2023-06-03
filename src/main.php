@@ -18,7 +18,7 @@ class Main extends PluginBase implements Listener {
         $player = $event->getPlayer();
         $servername = $this->getConfig()->get("Name");
         $prefix = $this->getConfig()->get("Prefix");
-        $message = $this->getConfig()->get("Message")
+        $message = $this->getConfig()->get("Message");
         $broadcasttoserver = $this->getConfig()->get("BroadcastToServer");
         $message = str_replace("{player}", $player->getName(), $message);
         $prefix = str_replace("&", "§", $prefix);
